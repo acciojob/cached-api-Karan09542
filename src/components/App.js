@@ -19,13 +19,13 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         {loading && <p>Loading...</p>}
-        <ul>
+        <div>
           {memoizeData.map((item) => (<div key={item.id}>
-            <li>{item.title}</li>
+            <h4>{item.title}</h4>
             <p>{item.body}</p>
             <br/>
           </div>))}
-        </ul>
+        </div>
     </div>
   )
 }
